@@ -1,0 +1,262 @@
+/* General Page Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  /* Headings */
+  h1, h3 {
+    text-align: center;
+    color: #4B1D0D;
+  }
+  
+  /* Forms */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="number"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Buttons */
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4B1D0D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #693122;
+  }
+  
+  /* Error Message */
+  #errorMsg {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Invoice Preview */
+  .invoice-box {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  }
+  
+  /* Responsive Items Blocks */
+  .item-block {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+  
+  .item-block h3 {
+    margin-top: 0;
+  }
+  
+  /* Invoice Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #bbb;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4B1D0D;
+    color: white;
+  }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.invoice-box {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #4B1D0D;
+  padding-bottom: 10px;
+}
+.company-info h2 {
+  font-size: 20pt;
+  margin: 0;
+}
+.company-info p {
+  font-size: 11pt;
+  line-height: 1.4;
+}
+.logo img {
+  width: 120px;
+}
+.invoice-title {
+  text-align: center;
+  font-size: 22pt;
+  font-weight: bold;
+  color: #4B1D0D;
+  margin: 20px 0 10px;
+  padding-top: 5px;
+}
+.section-flex {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11pt;
+  margin: 10px 0 20px;
+  align-items: flex-start;
+}
+.section-flex .left, .section-flex .right {
+  width: 48%;
+}
+.section-flex .right {
+  text-align: right;
+}
+.section-flex h3 {
+  margin-bottom: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11pt;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #bbb;
+  padding: 8px;
+  vertical-align: top;
+}
+th {
+  background-color: #4B1D0D;
+  color: #fff;
+}
+.summary-section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11pt;
+  margin-top: 30px;
+}
+.summary-left {
+  width: 48%;
+}
+.summary-right {
+  width: 48%;
+  text-align: right;
+}
+.summary-left p {
+  margin-bottom: 8px;
+}
+.summary-right p {
+  margin: 5px 0;
+}
+.signature {
+  margin-top: 60px;
+  text-align: right;
+}
+.signature img {
+  margin-top: 20px;
+}
+.signature p {
+  margin: 5px 0;
+  font-size: 11pt;
+}
+.footer {
+  text-align: center;
+  font-size: 10pt;
+  color: #777;
+  margin-top: 40px;
+}
+.section-flex .right p {
+  margin: 0;
+}
+.section-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section-flex .left, .section-flex .right {
+  width: 48%;
+}
+
+.section-flex .right {
+  text-align: right;
+}
+
+.invoice-details h3 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.invoice-details .details-text {
+  text-align: right;
+}
+
+.invoice-details .details-text p {
+  margin: 2px 0;
+}
+
+.invoice-details {
+  text-align: right;
+}
+
+.invoice-details .details-heading {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.invoice-details .details-text {
+  text-align: right;
+}
+
+.invoice-details .details-text p {
+  margin: 2px 0;
+}
