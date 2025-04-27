@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice Preview - RK Invoice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="invoice" class="invoice-box">
+    <div class="header">
+      <div class="company-info">
+        <h2>RK The Mobile Experts</h2>
+        <p>
+          Rajkot, University road <br>
+          Phone no.: 8200959874<br>
+          Email: rkthemobileexperts@gmail.com
+        </p>
+      </div>
+      <div class="logo">
+        <img src="images/logo.png" alt="RK Logo">
+      </div>
+    </div>
+
+    <div class="invoice-title">INVOICE</div>
+
+    <div class="section-flex">
+      <div class="left">
+        <strong>Bill toTo:</strong><br>
+        <span id="customerNamePreview"></span>
+      </div>
+      <div class="right">
+        <div class="invoice-details">
+          
+          <div class="details-text">
+            <p>Invoice No.: <span id="invoiceNo">405</span></p>
+            <p>Date: <span id="invoiceDate"></span></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Item Name</th>
+          <th>IMEI (Optional)</th>
+          <th>Quantity</th>
+          <th>Price/Unit</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody id="itemsTable">
+        <!-- Items will be injected here -->
+      </tbody>
+    </table>
+
+    <div class="summary-section">
+      <div class="summary-left">
+        <p><strong>Invoice Amount In Words:</strong><br><span id="amountInWords"></span></p>
+        <p><strong>Terms And Conditions:</strong><br>Thank you for doing business with us.</p>
+      </div>
+      <div class="summary-right">
+        <p>Sub Total: ₹<span id="subTotal"></span></p>
+        <p style="background-color:#4B1D0D; color:white; padding:5px;"><strong>Total: ₹<span id="totalAmount"></span></strong></p>
+        <p>Received: ₹<span id="receivedAmount"></span></p>
+        <p>Balance: ₹<span id="balanceAmount">0.00</span></p>
+      </div>
+    </div>
+
+    <div class="signature">
+      <p>For: RK The Mobile Experts</p>
+      <img src="images/signature.png" width="120" alt="Signature">
+      <p><strong>Authorized Signatory</strong></p>
+    </div>
+  </div>
+
+  <div class="container" style="text-align: center; margin-top: 20px;">
+    <button onclick="downloadPDF()">Download Invoice as PDF</button>
+  </div>
+
+  <script src="html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
