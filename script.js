@@ -1,3 +1,12 @@
+const currentPage = window.location.pathname.split('/').pop();
+
+if (currentPage !== 'login.html') {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (isLoggedIn !== 'true') {
+        window.location.href = 'login.html';
+    }
+}
+
 // LOGIN PAGE
 if (window.location.pathname.includes('login.html')) {
   const loginForm = document.getElementById('loginForm');
